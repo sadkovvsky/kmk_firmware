@@ -27,7 +27,9 @@ to Black formatting as documented in `pyproject.toml`)
 Unit tests within the `tests` folder mock various CircuitPython modules to allow
 them to be executed in a desktop development environment.
 
-Execute tests using the command `python -m unittest`.
+Execute tests using the command `make unit-tests`. The `unit-tests` target
+accepts an additional environment variable for selection of specific tests,
+example `make unit-tests TESTS="tests.test_kmk_keys tests.test_layers"`.
 
 ## Contributing Documentation
 While KMK welcomes documentation from anyone with and understanding of the issues 
